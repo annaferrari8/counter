@@ -50,4 +50,22 @@ h1 {
 .increment_btn {
     margin-left: 10px; 
 }
+/* media query */
+@media screen {
+    h1 {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+    .container {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-left: 90px;
+        margin-bottom: 60px;
+    }
+    .title {
+        font-size: 30px;
+    }
+} 
 

@@ -50,22 +50,28 @@ h1 {
 .increment_btn {
     margin-left: 10px; 
 }
+
 /* media query */
-@media screen {
-    h1 {
+@media only screen  (max-width: 700px) {
+    
+    .h1 {
         font-size: 30px;
-        padding: 5px 10px;
+        padding: 5px;
     }
+
     .container {
         width: 50%;
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-left: 90px;
-        margin-bottom: 60px;
+        
     }
+
+    .button_container { 
+        width: 50%; 
+    }
+
     .title {
         font-size: 30px;
     }
 } 
-

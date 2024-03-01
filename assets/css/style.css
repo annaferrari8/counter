@@ -3,75 +3,63 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 } 
-body { 
-    height: 100%;
-}
 
 body { 
-    background: #957541;       
+    background-color: rgb(167, 127, 10);
 }
 
 h1 { 
     text-align: center;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
-.container { 
+
+.counter_container {
+    margin-top: 100px;
+    padding: 10px 15px;
     align-items: center;
     justify-content: center;
-    display: flex;
-    width: 100%;
-    padding-top: 30vh;
     
 }
-.button_container { 
-    background: #dde9eb;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-.title {
-    padding-bottom: 4px;
-    font-size: 45px;
-}
-.btn button {
-    color: black;
-    padding: 18px 35px;
-    font-size: 16px;
-    font-weight: bolder;
-    border: 1px solid black;
+.counter_container button { 
+    width: 30%;
+    height: 50px;
+    justify-content: space-evenly;
+    padding: 15px 30px;
     cursor: pointer;
+    text-decoration: none;
+    border: 4px solid rgb(155, 126, 19);
+    text-align: center;
+    align-items: center;
+    margin-left: 35%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.counter_container button:hover {
     transition: 0.4s;
-}
-.decrement_btn { 
-    margin-right: 10px;
-}
-.increment_btn {
-    margin-left: 10px; 
+    background-color: rgb(169, 211, 230);
 }
 
-/* media query */
-@media only screen  (max-width: 700px) {
-    
-    .h1 {
-        font-size: 30px;
-        padding: 5px;
+h2 {
+font-size: 40px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+@media  screen and (max-width:700px) {
+    h1 {
+        font-size: 25px;
     }
 
-    .container {
-        width: 50%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    .button_container { 
-        width: 50%; 
-    }
-
-    .title {
+    h2 { 
         font-size: 30px;
     }
-} 
+    .counter_container button {
+        font-size: 16px;
+        font-weight: bold;
+        height: 50%;
+    }
+}

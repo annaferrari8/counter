@@ -16,7 +16,7 @@ So there is a little joke embodied in case you didn't realize: technically there
 
 
 ## You go and try it now
-💥<a https://annaferraricounter.netlify.app>Counter</a>💥
+💥<a href="https://annaferraricounter.netlify.app/">COUNTER</a>💥
 
 
 

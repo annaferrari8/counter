@@ -33,9 +33,9 @@ buttonContainer.appendChild(decrementButton);
 buttonContainer.appendChild(incrementButton);
 buttonContainer.appendChild(resetButton);
 
-let buttonmeno = createButton("-", counterMinus);
-let buttonpiu = createButton("+", counterPlus);
-let buttonstartover = createButton("Start Over", counterReset);
+let buttonmeno = createButton("-", change);
+let buttonpiu = createButton("+", change);
+let buttonstartover = createButton("Start Over", change);
 decrementButton.appendChild(buttonmeno);
 incrementButton.appendChild(buttonpiu);
 resetButton.appendChild(buttonstartover);
@@ -48,21 +48,21 @@ function createButton(text, event) {
         button.addEventListener("click", event);
     }
     return button;
-};
-function counterPlus() {
-    counter ++;
-    updateDisplay();
-};
-function counterMinus() {
-    if (counter > 0){
-    counter --;
-    updateDisplay();
-    }
-};
-function counterReset() {
-    counter = 0;
-    updateDisplay();
-};
+}
+
+function change(option){
+	if(option.currentTarget.innerText == "+"){
+  	counter ++;
+  }
+  else if(option.currentTarget.innerText == "-" && counter > 0){
+  	counter --;
+  }
+  else if(option.currentTarget.innerText =="Start Over"){
+  	counter=0;
+  }
+	updateDisplay();
+}
+
 function updateDisplay() {
     display.innerHTML = counter;
-};
+}
